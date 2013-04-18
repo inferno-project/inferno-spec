@@ -24,8 +24,6 @@ module Inferno
 
     protected
 
-      Meth = Struct.new(:name, :args, :block, :ret_type).freeze
-
       def def_instance_method(name, *args)
         @_instance_methods ||= []
         @_instance_methods << InterfaceMethod.new(name, *args)
